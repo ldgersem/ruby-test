@@ -1,0 +1,14 @@
+
+<div class="card border-info">
+  <div class="card-body">
+    <h1 class="card-title">  <%= @friend.first_name %>   <%= @friend.last_name %>
+
+</h1>
+    <p class="card-text"><%= @friend.email %> | <%= @friend.phone %> | <%= @friend.twitter %></p>
+    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %> 
+    <%# <%= link_to 'Delete', @friend, method :destroy, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %>  
+
+<%= link_to 'Back', friends_path, class:"btn btn-dark" %>
+  </div>
+</div>
+
